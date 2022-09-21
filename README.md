@@ -1,4 +1,6 @@
-First money attemps.
+Need money, first attempts.
 
-Madrid already done, gotta work on Milan right now, gl to us!
+Madrid started, Milan starting now.
+
+Start: 21/09/2022
 

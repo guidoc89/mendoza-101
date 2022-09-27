@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["guido <guid.castr@gmail.com>"]
 
-
 [tool.poetry.dependencies]
 python = "^3.8"
 pandas = "^1.4.2"
@@ -19,12 +18,25 @@ opencv-python = "^4.6.0"
 PyYAML = "^6.0"
 tqdm = "^4.64.0"
 wandb = "^0.12.21"
+isort = "^5.10.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 black = "^22.3.0"
 mypy = "^0.961"
+pre-commit = "*"
+pydocstyle = {extras = ["toml"], version = "*"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = 'black'
+
+[tool.pydocstyle]
+convention = 'google'
+add-ignore = "D100,D101,D102,D103,D104,D105,D106,D107"
